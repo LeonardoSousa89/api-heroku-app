@@ -1,0 +1,18 @@
+pesquisa de erro:
+    https://stackoverflow.com/questions/52093618/knex-required-configuration-option-client-is-missing-error
+
+
+
+comandos:
+    instalação:
+        npm init -y
+        npm i --save-dev nodemon
+        npm i cors express pg knex
+    
+    knex:
+        knex init
+        knex migrate:make create_table_auth
+        knex migrate:latest
+    
+    development:
+        npm start

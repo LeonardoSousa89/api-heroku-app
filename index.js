@@ -1,7 +1,7 @@
 const port = process.env.PORT || 8081
 const environment_dev  = process.env.NODE_ENV     || 'development'
 const environment_prod = process.env.DATABASE_URL || 'production'
-const db   = require('./knexfile')[environment_prod]
+const db   = require('./knexfile')[environment_dev]
 const knex = require('knex')(db)
 const cors = require('cors')
 const express = require('express')
